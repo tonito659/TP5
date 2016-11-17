@@ -102,7 +102,7 @@ public class GenerateurLabyrinthe {
     public static void printLabyrinthe(boolean [][] laby) {
 
         StringBuilder sb = new StringBuilder();
-        for(int i =0;i<laby.length;i++) {
+        for(int i =0;i<laby.length;i++) { 
             for(int j=0;j<laby.length;j++)
                 sb.append(laby[i][j] ? " "   : "#");
             sb.append('\n');
