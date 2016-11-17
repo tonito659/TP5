@@ -98,6 +98,7 @@ public class GenerateurLabyrinthe {
         }
        return out;
     }
+
     public static void printLabyrinthe(boolean [][] laby) {
 
         StringBuilder sb = new StringBuilder();
@@ -109,6 +110,16 @@ public class GenerateurLabyrinthe {
 
         System.out.println(sb.toString());
     }
+    public static int[] setDebut(int longueur, int largeur){
+
+        int debutX = random.nextInt(largeur);
+        int debutY = random.nextInt(longueur);
+
+        int[] debut = {debutX,debutY};
+        return debut;
+    }
+
+
     public static void main(String [] args) {
 
         printLabyrinthe(generer());
